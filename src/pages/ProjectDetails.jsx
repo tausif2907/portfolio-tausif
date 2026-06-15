@@ -30,7 +30,10 @@ const ProjectDetails = () => {
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-6 backdrop-blur-md bg-black/50 border-b border-white/10 flex items-center justify-between">
         <button 
-          onClick={() => navigate("/")}
+          onClick={() => {
+            sessionStorage.setItem("returnToWork", "true");
+            navigate("/");
+          }}
           className="flex items-center gap-2 text-sm uppercase tracking-widest hover:text-amber-500 transition-colors"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
