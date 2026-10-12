@@ -2,15 +2,414 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tausif Ansari</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tausif Ansari — Full-Stack & AI Developer</title>
+  <meta name="description"
+    content="Tausif Ansari — final-year CS student in Bangalore building full-stack and AI-powered products with Python, FastAPI, Next.js and PostgreSQL." />
+  <meta property="og:title" content="Tausif Ansari — Full-Stack & AI Developer" />
+  <meta property="og:description" content="Full-stack and AI-powered products, shipped end-to-end." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23111'/><text x='50' y='66' font-size='46' font-family='Arial' font-weight='700' fill='%23f4f3ef' text-anchor='middle'>TA</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <div class="cursor" aria-hidden="true"><span class="cursor-label">View</span></div>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <span class="loader-name mono">Tausif Ansari — Portfolio</span>
+    <div class="loader-count">0</div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#top" class="nav-logo">TA<span>®</span></a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#lab">Playground</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta magnetic">Let's talk</a>
+    </nav>
+    <div class="nav-time mono">Bangalore <span id="clock">--:--</span></div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-meta mono">
+        <span>[ Portfolio — 2026 ]</span>
+        <span class="status"><i></i> Open to Software Engineering roles</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span>Full-stack &amp;</span></span>
+        <span class="line"><span><em>AI-powered</em> products,</span></span>
+        <span class="line"><span>shipped end-to-end.</span></span>
+      </h1>
+
+      <div class="hero-bottom">
+        <div class="hero-portrait">
+          <img src="assets/profile.jpg" alt="Portrait of Tausif Ansari" width="1000" height="1000" />
+        </div>
+        <p class="hero-intro">
+          I'm <strong>Tausif Ansari</strong>, a final-year Computer Science student in Bangalore.
+          I build production systems — from backend APIs and scrapers to dashboards,
+          payments and Docker deployments.
+        </p>
+        <a href="#work" class="scroll-hint mono">Scroll ↓</a>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><span>✦</span><span>FastAPI</span><span>✦</span><span>Next.js</span><span>✦</span>
+        <span>PostgreSQL</span><span>✦</span><span>React</span><span>✦</span><span>Docker</span><span>✦</span>
+        <span>OpenAI</span><span>✦</span><span>Playwright</span><span>✦</span>
+        <span>Python</span><span>✦</span><span>FastAPI</span><span>✦</span><span>Next.js</span><span>✦</span>
+        <span>PostgreSQL</span><span>✦</span><span>React</span><span>✦</span><span>Docker</span><span>✦</span>
+        <span>OpenAI</span><span>✦</span><span>Playwright</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="section-label mono">[01] About</div>
+      <p class="about-text split">
+        I like owning a feature end-to-end. My latest build is a monetized SaaS that
+        scrapes, audits and scores local businesses, with a CRM, AI-written pitches
+        and subscription billing on top.
+      </p>
+    </section>
+
+    <!-- Work (horizontal scroll) -->
+    <section class="work" id="work">
+      <div class="work-header">
+        <div class="section-label mono">[02] Selected work</div>
+        <h2 class="section-title">Things I've built</h2>
+      </div>
+      <div class="work-track">
+        <button class="project" data-project="mapmachine" data-cursor="Open">
+          <div class="project-media"><img src="assets/projects/mapmachine-1.png"
+              alt="MapMachine landing page: Type a query, get closable leads" loading="lazy" /></div>
+          <div class="project-info">
+            <h3>MapMachine <span class="tag mono">SaaS</span></h3>
+            <span class="mono">Next.js · FastAPI · Playwright</span>
+          </div>
+        </button>
+        <button class="project" data-project="vedaverse" data-cursor="Open">
+          <div class="project-media"><img src="assets/projects/vedaverse-1.png"
+              alt="VedaVerse solving a handwritten chemistry equation step by step" loading="lazy" /></div>
+          <div class="project-info">
+            <h3>VedaVerse <span class="tag mono">AI</span></h3>
+            <span class="mono">Django · LangChain · RAG</span>
+          </div>
+        </button>
+        <button class="project" data-project="connectflow" data-cursor="Open">
+          <div class="project-media"><img src="assets/projects/connectflow-1.png"
+              alt="ConnectFlow WhatsApp bot conversation" loading="lazy" /></div>
+          <div class="project-info">
+            <h3>ConnectFlow</h3>
+            <span class="mono">Node · WhatsApp Cloud API</span>
+          </div>
+        </button>
+        <button class="project" data-project="figotees" data-cursor="Open">
+          <div class="project-media"><img src="assets/projects/figotees-1.png" alt="Figotees storefront homepage"
+              loading="lazy" /></div>
+          <div class="project-info">
+            <h3>Figotees</h3>
+            <span class="mono">Brand storefront</span>
+          </div>
+        </button>
+        <button class="project" data-project="crm" data-cursor="Open">
+          <div class="project-media"><img src="assets/projects/crm-1.png" alt="Smart CRM Suite dashboard"
+              loading="lazy" /></div>
+          <div class="project-info">
+            <h3>Smart CRM Suite</h3>
+            <span class="mono">React · Node · MongoDB</span>
+          </div>
+        </button>
+        <button class="project" data-project="signlang" data-cursor="Open">
+          <div class="project-media project-media--signs" aria-label="Sign Language Recognition">
+            <svg class="hand" viewBox="0 0 200 220" aria-hidden="true">
+              <g class="bones">
+                <path d="M100 200 L70 160 L55 125 L45 95 L38 70" />
+                <path d="M100 200 L88 140 L85 100 L83 70 L82 45" />
+                <path d="M100 200 L105 138 L108 95 L110 62 L112 35" />
+                <path d="M100 200 L122 142 L130 105 L136 78 L140 55" />
+                <path d="M100 200 L135 155 L152 128 L164 108 L174 90" />
+                <path d="M88 140 L105 138 L122 142 L135 155 M70 160 L88 140" />
+              </g>
+              <g class="joints">
+                <circle cx="100" cy="200" r="5" />
+                <circle cx="70" cy="160" r="4" />
+                <circle cx="55" cy="125" r="4" />
+                <circle cx="45" cy="95" r="4" />
+                <circle cx="38" cy="70" r="4" />
+                <circle cx="88" cy="140" r="4" />
+                <circle cx="85" cy="100" r="4" />
+                <circle cx="83" cy="70" r="4" />
+                <circle cx="82" cy="45" r="4" />
+                <circle cx="105" cy="138" r="4" />
+                <circle cx="108" cy="95" r="4" />
+                <circle cx="110" cy="62" r="4" />
+                <circle cx="112" cy="35" r="4" />
+                <circle cx="122" cy="142" r="4" />
+                <circle cx="130" cy="105" r="4" />
+                <circle cx="136" cy="78" r="4" />
+                <circle cx="140" cy="55" r="4" />
+                <circle cx="135" cy="155" r="4" />
+                <circle cx="152" cy="128" r="4" />
+                <circle cx="164" cy="108" r="4" />
+                <circle cx="174" cy="90" r="4" />
+              </g>
+            </svg>
+            <span class="signs-caption mono">21 landmarks · real-time</span>
+          </div>
+          <div class="project-info">
+            <h3>Sign Language AI</h3>
+            <span class="mono">OpenCV · MediaPipe · Keras</span>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Hand-tracking playground -->
+    <section class="section lab" id="lab">
+      <div class="lab-grid">
+        <div class="lab-copy">
+          <div class="section-label mono">[03] Playground</div>
+          <h2 class="section-title split">Talk to me with your hands</h2>
+          <p class="lab-intro reveal">
+            A live version of the idea behind my Sign Language project. Turn on your camera and
+            a hand-tracking model follows 21 points on each hand, right here in your browser.
+          </p>
+          <ul class="gestures reveal" aria-label="Gestures to try">
+            <li data-gesture="Open_Palm"><b>👋</b>Wave hello</li>
+            <li data-gesture="Thumb_Up"><b>👍</b>Thumbs up</li>
+            <li data-gesture="Victory"><b>✌️</b>Peace sign</li>
+            <li data-gesture="ILoveYou"><b>🤟</b>ASL “I love you”</li>
+            <li data-gesture="Pointing_Up"><b>☝️</b>Point to draw</li>
+            <li data-gesture="Closed_Fist"><b>✊</b>Fist to clear</li>
+            <li data-gesture="Thumb_Down"><b>👎</b>Thumbs down</li>
+          </ul>
+          <p class="lab-privacy mono">🔒 Runs fully on your device · no video leaves your browser</p>
+        </div>
+
+        <div class="lab-stage reveal" data-state="idle">
+          <video class="lab-video" playsinline muted></video>
+          <canvas class="lab-canvas"></canvas>
+
+          <div class="lab-overlay lab-overlay--idle">
+            <svg class="hand lab-hand" viewBox="0 0 200 220" aria-hidden="true">
+              <g class="bones">
+                <path d="M100 200 L70 160 L55 125 L45 95 L38 70" />
+                <path d="M100 200 L88 140 L85 100 L83 70 L82 45" />
+                <path d="M100 200 L105 138 L108 95 L110 62 L112 35" />
+                <path d="M100 200 L122 142 L130 105 L136 78 L140 55" />
+                <path d="M100 200 L135 155 L152 128 L164 108 L174 90" />
+                <path d="M88 140 L105 138 L122 142 L135 155 M70 160 L88 140" />
+              </g>
+              <g class="joints">
+                <circle cx="100" cy="200" r="5" /><circle cx="70" cy="160" r="4" /><circle cx="55" cy="125" r="4" />
+                <circle cx="45" cy="95" r="4" /><circle cx="38" cy="70" r="4" /><circle cx="88" cy="140" r="4" />
+                <circle cx="85" cy="100" r="4" /><circle cx="83" cy="70" r="4" /><circle cx="82" cy="45" r="4" />
+                <circle cx="105" cy="138" r="4" /><circle cx="108" cy="95" r="4" /><circle cx="110" cy="62" r="4" />
+                <circle cx="112" cy="35" r="4" /><circle cx="122" cy="142" r="4" /><circle cx="130" cy="105" r="4" />
+                <circle cx="136" cy="78" r="4" /><circle cx="140" cy="55" r="4" /><circle cx="135" cy="155" r="4" />
+                <circle cx="152" cy="128" r="4" /><circle cx="164" cy="108" r="4" /><circle cx="174" cy="90" r="4" />
+              </g>
+            </svg>
+            <button class="btn lab-start magnetic" type="button">Turn on camera</button>
+            <p class="lab-note mono">Works best with good lighting and one hand in view</p>
+          </div>
+
+          <div class="lab-overlay lab-overlay--loading" aria-hidden="true">
+            <span class="lab-spinner"></span>
+            <p class="mono lab-loading-text">Loading hand model…</p>
+          </div>
+
+          <div class="lab-overlay lab-overlay--error">
+            <p class="lab-error-text">Couldn't access the camera.</p>
+            <button class="btn btn-ghost lab-retry" type="button">Try again</button>
+          </div>
+
+          <div class="lab-hud mono" aria-hidden="true">
+            <span><i class="lab-rec"></i> Live</span>
+            <span class="lab-stats">0 hands · -- fps</span>
+          </div>
+          <div class="lab-reaction" aria-live="polite">
+            <strong class="lab-reaction-title"></strong>
+            <span class="lab-reaction-sub"></span>
+          </div>
+          <div class="lab-meter" aria-hidden="true">
+            <span class="lab-meter-label mono">Waiting for a hand…</span>
+            <span class="lab-meter-bar"><i></i></span>
+          </div>
+          <button class="lab-stop mono" type="button">Stop camera</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="section-label mono">[04] Skills</div>
+      <h2 class="section-title split">The toolkit I ship with</h2>
+
+      <div class="skill-list">
+        <article class="skill reveal">
+          <span class="skill-num mono">01</span>
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>SQL</li>
+          </ul>
+        </article>
+        <article class="skill reveal">
+          <span class="skill-num mono">02</span>
+          <h3>Web &amp; Backend</h3>
+          <ul class="chips">
+            <li>Next.js</li>
+            <li>React</li>
+            <li>FastAPI</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>REST APIs</li>
+          </ul>
+        </article>
+        <article class="skill reveal">
+          <span class="skill-num mono">03</span>
+          <h3>Data</h3>
+          <ul class="chips">
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Prisma</li>
+            <li>Redis</li>
+          </ul>
+        </article>
+        <article class="skill reveal">
+          <span class="skill-num mono">04</span>
+          <h3>AI / ML</h3>
+          <ul class="chips">
+            <li>OpenAI API</li>
+            <li>LangChain / RAG</li>
+            <li>ChromaDB</li>
+            <li>Gemini</li>
+            <li>TensorFlow / Keras</li>
+            <li>OpenCV</li>
+            <li>MediaPipe</li>
+            <li>Random Forest</li>
+            <li>Pandas</li>
+          </ul>
+        </article>
+        <article class="skill reveal">
+          <span class="skill-num mono">05</span>
+          <h3>Tools &amp; Infra</h3>
+          <ul class="chips">
+            <li>Docker</li>
+            <li>Playwright</li>
+            <li>Git</li>
+            <li>Firebase Auth</li>
+            <li>Razorpay</li>
+            <li>Upstash</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section journey">
+      <div class="section-label mono">[05] Education &amp; credentials</div>
+      <div class="journey-grid">
+        <div>
+          <h2 class="section-title split">Where I've learned</h2>
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="mono">2022 — 2026</span>
+              <h4>B.Tech, Computer Science &amp; Engineering</h4>
+              <p>REVA University, Bangalore</p>
+            </li>
+            <li class="reveal">
+              <span class="mono">2022</span>
+              <h4>Senior Secondary (XII), PCMC</h4>
+              <p>JUSCO School Kadma, Jamshedpur</p>
+            </li>
+            <li class="reveal">
+              <span class="mono">2020</span>
+              <h4>Secondary (X)</h4>
+              <p>DBMS Kadma High School, Jamshedpur</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="cert-heading mono">Certifications &amp; training</h3>
+          <ul class="certs">
+            <li class="reveal"><span>IBM</span>Enterprise Grade AI</li>
+            <li class="reveal"><span>Salesforce</span>Agentforce Specialist</li>
+            <li class="reveal"><span>Goldman Sachs · Forage</span>Software Engineering Job Simulation</li>
+            <li class="reveal"><span>Accenture · Forage</span>Data Analytics &amp; Visualization</li>
+            <li class="reveal"><span>LetsUpgrade</span>MongoDB Bootcamp</li>
+            <li class="reveal"><span>REVA University</span>Hack Horizon 2.0 Hackathon</li>
+            <li class="reveal"><span>REVA University</span>Skill Development: JS, App Dev, Python, Game Dev</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <div class="section-label mono">[06] Contact</div>
+    <h2 class="footer-title">
+      <span class="line"><span>Let's build</span></span>
+      <span class="line"><span>something <em>real.</em></span></span>
+    </h2>
+    <p class="footer-sub">Looking for Software Engineering roles where I can build and scale production systems.
+      Freelance projects welcome too.</p>
+    <div class="footer-ctas">
+      <a href="mailto:tausifansari2907@gmail.com" class="btn magnetic">tausifansari2907@gmail.com</a>
+      <a href="https://www.linkedin.com/in/tausifansari2907" class="btn btn-ghost magnetic" target="_blank"
+        rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/tausif2907" class="btn btn-ghost magnetic" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="#top" class="btn btn-ghost magnetic">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Project detail drawer -->
+  <div class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <div class="drawer-backdrop" data-close></div>
+    <article class="drawer-panel" data-lenis-prevent>
+      <button class="drawer-close mono" data-close aria-label="Close">Close ✕</button>
+      <span class="drawer-kicker mono"></span>
+      <h2 id="drawer-title" class="drawer-title"></h2>
+      <p class="drawer-lede"></p>
+      <ul class="chips drawer-stack"></ul>
+      <a class="btn drawer-cta magnetic" href="#" hidden></a>
+      <ul class="drawer-points"></ul>
+      <div class="drawer-gallery"></div>
+    </article>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script type="module" src="hands.js"></script>
 </body>
 
 </html>
