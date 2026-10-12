@@ -4,8 +4,6 @@ Personal portfolio of **Tausif Ansari**, a full-stack & AI developer.
 
 **Live:** [portfolio-tausif.vercel.app](https://portfolio-tausif.vercel.app)
 
-![Profile](assets/profile.jpg)
-
 ## Highlights
 
 - **Pinned horizontal work section:** project cards scroll sideways as you scroll down, and each one opens a detail drawer with screenshots, stack and write-up.
