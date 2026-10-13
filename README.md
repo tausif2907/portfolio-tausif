@@ -17,10 +17,10 @@ Personal portfolio of **Tausif Ansari**, a full-stack & AI developer.
 | --- | --- |
 | **MapMachine** | Hyper-local lead-generation SaaS (live & monetized) |
 | **VedaVerse** | Voice-first AI learning for the visually impaired |
-| **Smart CRM Suite** | Centralized lead & sales tracking |
+| **E-commerce Store** | Online store & tailoring studio for Rashmi Boutique |
 | **ConnectFlow** | WhatsApp customer-engagement automation |
-| **Figotees** | Brand storefront (design & build) |
 | **Sign Language Recognition** | Real-time gesture-to-text with computer vision |
+| **Smart CRM Suite** | Centralized lead & sales tracking |
 
 ## Tech stack
 

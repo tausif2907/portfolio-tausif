@@ -56,16 +56,19 @@ const PROJECTS = {
     ],
     images: ["connectflow-1.png", "connectflow-2.png"],
   },
-  figotees: {
-    kicker: "Brand storefront · Design & build",
-    title: "Figotees",
-    lede: "A premium digital storefront crafted to reflect the Figotees brand identity and turn a scattered set of pages into one cohesive shopping experience.",
-    stack: ["Web design", "Frontend", "E-commerce"],
+  ecommerce: {
+    kicker: "Rashmi Boutique · Online store & tailoring studio",
+    title: "E-commerce Store",
+    lede: "A full online store for Rashmi Boutique, a designer-wear and tailoring shop in Jamshedpur: customers browse and buy ready-to-wear outfits or order them stitched to their own measurements, and the owner runs the whole business from an admin panel.",
+    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Supabase", "PostgreSQL", "TanStack Query", "Vitest", "Vercel"],
     points: [
-      "Unified fragmented pages into a single storefront that showcases collections and builds instant trust.",
-      "Clean typography, generous whitespace and smooth interactions — taken from wireframes to high-fidelity build.",
+      "Complete shopping flow: category and filter browsing, search, product pages with size selection and a \"custom fit\" option, cart, wishlist, coupons and checkout.",
+      "Customer accounts with saved addresses, body measurements for stitch-to-measure orders, order history, product reviews and back-in-stock alerts.",
+      "Orders are placed by a single PostgreSQL function that re-prices the cart on the server, applies coupons, validates the address and locks stock rows so two shoppers can't buy the last piece.",
+      "Admin panel for products, orders, coupons, reviews, stock alerts and home-page banners, plus a sales overview with revenue charts. Admins sign in with two-step verification.",
+      "Security built in: Row Level Security on every table, rate limits on orders and coupon attempts, and strict Content-Security-Policy headers on Vercel.",
     ],
-    images: ["figotees-1.png", "figotees-2.png"],
+    images: ["ecommerce-1.jpg", "ecommerce-2.png", "ecommerce-3.jpg", "ecommerce-4.png", "ecommerce-5.png"],
   },
   signlang: {
     kicker: "Computer vision · Real-time gesture-to-text",
